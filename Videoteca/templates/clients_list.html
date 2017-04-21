@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block menu %}
+
+	<ul>
+	    <li><a href="/Videoteca/">Main Page</a></li>
+			<li><a href="/Videoteca/movies/">Films</a></li>
+			<li><a href="/Videoteca/actors/">Actors</a></li>
+			<li><a href="/Videoteca/clients/">Clients</a></li>
+			<li><a href="/Videoteca/videotecas/">Videoteca</a></li>
+	</ul>
+{% endblock %}
+{% block content %}
+
+	<h1>Clients:</h1>
+
+	{% for client in client_list %}
+        <a href="{% url 'Videoteca:client_detail' client.id %}">{{ client.name }}</a><br>
+	{% empty %}Sorry!No client registered yet!
+	{% endfor %}
+
+        <a href="javascript:history.back(-1);" title="Go back!"> <button>Go Back</button></a>
+
+{% endblock %}

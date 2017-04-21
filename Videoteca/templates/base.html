@@ -1,0 +1,22 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title %}{{titlehead}}{% endblock %}</title>
+</head>
+
+<body>
+
+       <!--FALTA ACABAR-->
+
+    {% block menu %}
+    {% endblock %}
+
+            {% block content %}
+                {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+            {% endblock %}
+
+</body>
+</html>
+

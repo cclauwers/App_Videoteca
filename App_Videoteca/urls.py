@@ -16,9 +16,13 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
+from Videoteca.views import mainpage
+
 admin.autodiscover()
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^Videoteca/', include('Videoteca.urls', namespace='Videoteca')),
+    url(r'^',mainpage, name='home')
+
 ]

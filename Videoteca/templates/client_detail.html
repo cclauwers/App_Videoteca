@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block menu %}
+
+	<ul>
+	    <li><a href="/Videoteca/">Main Page</a></li>
+        <li><a href="/Videoteca/movies/">Films</a></li>
+        <li><a href="/Videoteca/actors/">Actors</a></li>
+        <li><a href="/Videoteca/clients/">Clients</a></li>
+        <li><a href="/Videoteca/videotecas/">Videoteca</a></li>
+	</ul>
+{% endblock %}
+{% block content %}
+
+        <h1>{{ client.name }} DETAIL</h1>
+
+        <b>DNI:</b> {{client.DNI}}<br>
+
+        <b>name:</b> {{client.name}}<br>
+
+        <b>Phone:</b>{{client.phone}}<br>
+
+        <b>Email:</b>{{client.email}}<br>
+
+        <a href="javascript:history.back(-1);" title="Go back!"> <button>Go Back</button></a>
+
+{% endblock %}

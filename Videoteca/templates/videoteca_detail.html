@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block menu %}
+
+    <ul>
+	    <li><a href="/Videoteca/">Main Page</a></li>
+        <li><a href="/Videoteca/movies/">Films</a></li>
+        <li><a href="/Videoteca/actors/">Actors</a></li>
+        <li><a href="/Videoteca/clients/">Clients</a></li>
+        <li><a href="/Videoteca/videotecas/">Videoteca</a></li>
+	</ul>
+{% endblock %}
+
+{% block content %}
+
+    <h1>LLOGUER DETAIL DEL CLIENT {{ videoteca.client.name }} amb DNI: {{ videoteca.client.DNI }}</h1>
+
+    <b>Client:</b>{{ videoteca.client.name }}<br>
+
+    <b>data lloguer:</b> {{ videoteca.data_lloguer }}<br>
+
+    <b>Data limit:</b>{{videoteca.data_limit}}<br>
+
+    <b>Movies:</b><br>
+
+    <!--FALTE LLISTAR MOVIES QUE HA LLOGAT-->
+
+        {% for movie in videoteca.movies.all %}
+            *** entrooooooo ***
+            {{videoteca.movies.all}}
+            {{movies}}
+
+            <a href="{% url 'Videoteca:movie_detail' movie.id %}">{{movie.name}}</a><br>
+        {% endfor %}
+
+    <a href="javascript:history.back(-1);" title="Go back!"> <button>Go Back</button></a>
+{% endblock %}

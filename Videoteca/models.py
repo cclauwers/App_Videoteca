@@ -13,7 +13,7 @@ class Actor(models.Model):
         return u"%s" % self.name
 
     def get_absolute_url(self):
-        return reverse('Videoteca:actor_detail', kwargs={'pk': self.pk})
+        return reverse('Videoteca:actor_detail', kwargs={'pk': self.pk, })
 
 class Movie(models.Model):
     title = models.TextField(max_length=50)
@@ -50,7 +50,6 @@ class Videoteca(models.Model):
         Client,
         on_delete=models.CASCADE,
         primary_key=True,
-        default=1
     )
     data_lloguer = models.DateField()
     data_limit = models.DateField()
