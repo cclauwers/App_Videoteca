@@ -1,0 +1,4 @@
+codegen==1.0
+Django==1.10.6
+django-serializers==0.6.0
+patterns==0.3

@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="35cd7a47-937f-4249-a095-25f28d148bb9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Videoteca/forms.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App_Videoteca/settings.py" afterPath="$PROJECT_DIR$/App_Videoteca/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App_Videoteca/urls.py" afterPath="$PROJECT_DIR$/App_Videoteca/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Videoteca/templates/base.html" afterPath="$PROJECT_DIR$/Videoteca/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Videoteca/templates/mainpage.html" afterPath="$PROJECT_DIR$/Videoteca/templates/mainpage.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Videoteca/urls.py" afterPath="$PROJECT_DIR$/Videoteca/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Videoteca/views.py" afterPath="$PROJECT_DIR$/Videoteca/views.py" />
-    </list>
+    <list default="true" id="35cd7a47-937f-4249-a095-25f28d148bb9" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
