@@ -23,14 +23,17 @@
     <b>Movies:</b><br>
 
     <!--FALTE LLISTAR MOVIES QUE HA LLOGAT-->
-
+        <ul>
         {% for movie in videoteca.movies.all %}
-            *** entrooooooo ***
-            {{videoteca.movies.all}}
-            {{movies}}
+            <li>{{ movie}}
+
 
             <a href="{% url 'Videoteca:movie_detail' movie.id %}">{{movie.name}}</a><br>
         {% endfor %}
+
+
+        </ul>
+
 
     <a href="javascript:history.back(-1);" title="Go back!"> <button>Go Back</button></a>
 {% endblock %}
