@@ -2,21 +2,29 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>{% block title %}{{titlehead}}{% endblock %}</title>
-</head>
+<head> <title>{% block title %} Gestion de Videoteca {% endblock %}</title></head>
 
 <body>
+<!--REVISAR PARA LOGIN-->
+    <div>
+        {% block header %}
+            {% if  user.is_authenticated %}
+                <p>User: {{ user.username }}  <a href="logout"><button>logout</button></a></p>
+            {% else %}
+                <p><a href="/Videoteca/login/">Sign in</a></p>
+            {% endif %}
+        {% endblock %}
+    </div>
 
-       <!--FALTA ACABAR-->
+    {% block menu %}{% endblock %}
 
-    {% block menu %}
+    {% block content %}
+        {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
     {% endblock %}
-
-            {% block content %}
-                {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
-            {% endblock %}
 
 </body>
 </html>
+
+
+
 

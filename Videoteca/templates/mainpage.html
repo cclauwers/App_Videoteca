@@ -1,8 +1,9 @@
 {% extends "base.html" %}
-{% block content %}
+{% block header %}
 
+<!--REVISAR PARA LOGIN-->
         {% if user.username %}
-            <p><h2>Benvingut a la videoteca  {{ user.username }} & comença a gestionar la videoteca!</h2></p>
+            <p><h2>Benvingut {{ user.username }} a la videoteca & comença a gestionar la videoteca!</h2></p><a href="logout"><button>logout</button></a></p>
         {% else %}
             <p> Has de <a href="/login/">Loguejarte!</a> per fer tota la gestio de la videoteca.</p>
         {% endif %}

@@ -1,8 +1,16 @@
-from django.conf.urls import url
+from django.conf.urls import url, include
+from django.contrib.auth import views as auth_views
+from django.contrib.auth.views import logout
 
 from views import *
 
 urlpatterns = [
+
+    #LOGIN -> /Videoteca/login/
+    #url(r'^login/$', auth_views.login, name='login', kwargs={'template_name': 'login.html'}),
+    #url(r'^logout/$', auth_views.logout, kwargs={'template_name': 'mainpage.html'}, name='logout'),
+    #url(r'^logout/$', 'django.contrib.auth.views.logout',{'next_page': '/successfully_logged_out/'}),
+
 
     # MOVIE -> List Movies: /Videoteca/movies
     url(r'^movies/$',MovieList.as_view(),name='movie_list'),
